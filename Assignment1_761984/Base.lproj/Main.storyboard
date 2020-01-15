@@ -32,6 +32,9 @@
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="findWayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nDZ-Zg-Mkx"/>
+                                </connections>
                             </button>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" zoomEnabled="NO" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="obN-TJ-EXd">
                                 <rect key="frame" x="0.0" y="40" width="375" height="627"/>
@@ -39,6 +42,15 @@
                                     <constraint firstAttribute="height" constant="601" id="hZl-6n-1N0"/>
                                 </constraints>
                             </mapView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yZP-s6-6QH">
+                                <rect key="frame" x="39" y="589" width="85" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <segments>
+                                    <segment title="" image="car" catalog="system"/>
+                                    <segment title="" image="person.circle.fill" catalog="system"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -56,6 +68,7 @@
                     <connections>
                         <outlet property="findMyWayBtn" destination="kOL-3Q-gmB" id="lHf-Ch-MuZ"/>
                         <outlet property="mapView" destination="obN-TJ-EXd" id="sjR-UQ-tH5"/>
+                        <outlet property="segment_Control" destination="yZP-s6-6QH" id="9Pn-dA-E0w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -63,4 +76,8 @@
             <point key="canvasLocation" x="132" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="car" catalog="system" width="64" height="46"/>
+        <image name="person.circle.fill" catalog="system" width="64" height="60"/>
+    </resources>
 </document>
