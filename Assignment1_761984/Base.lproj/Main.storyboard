@@ -56,6 +56,12 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="locationButton"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7FW-jH-taf">
+                                <rect key="frame" x="327" y="89" width="24" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" image="minus.rectangle" catalog="system"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -84,6 +90,7 @@
     <resources>
         <image name="car" catalog="system" width="64" height="46"/>
         <image name="locationButton" width="67" height="67"/>
+        <image name="minus.rectangle" catalog="system" width="64" height="46"/>
         <image name="person.circle.fill" catalog="system" width="64" height="60"/>
     </resources>
 </document>
